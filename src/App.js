@@ -1,11 +1,22 @@
 import React, { Component } from 'react';
+import Navbar from './components/Navbar'
+import { Route, BrowserRouter } from 'react-router-dom'
+import Home from './components/Home'
+import About from './components/About'
+import Contact from './components/Contact'
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-       <h1 className="center container blue-text">Welcome to Poketimes</h1>
-      </div>
+      <BrowserRouter>
+        <div className="App">
+          <Navbar />
+          <h2 className="container center blue-text">Welcome to Poke'Times</h2>
+          <Route exact path='/' component={Home}/>
+          <Route path='/about' component={About} />
+          <Route path='/contact' component={Contact} />
+        </div>
+      </BrowserRouter>
     );
   }
 }
