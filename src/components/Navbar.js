@@ -7,7 +7,7 @@ import { Link, NavLink, withRouter} from 'react-router-dom';
 const Navbar = (props) =>{
     // console.log(props);
     setTimeout(() =>{
-        props.history.push('/About')
+        props.history.push('/Contact')
     },2000);
     //NavLink is used to apply some stylink to components in future
     return(
