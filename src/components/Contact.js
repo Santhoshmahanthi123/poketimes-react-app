@@ -1,6 +1,11 @@
 import React from 'react';
 //UI baseed component which is a function it is Contact component
-const Contact = () =>{
+//router alreadyb adds props and using this we can render to other page using setTimeout function
+const Contact = (props) =>{
+//   console.log(props);
+    setTimeout(() =>{
+        props.history.push('/')
+    },2000);
     return(
         <div className="container">
             <h4 className="center">Contact</h4>
