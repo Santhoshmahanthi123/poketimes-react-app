@@ -1,4 +1,5 @@
 import React from 'react';
+import Rainbow from '../hoc/Rainbow'
 //UI baseed component which is a function it is Home component
 const About = () =>{
     return(
@@ -8,4 +9,4 @@ const About = () =>{
         </div>
     )
 }
-export default About;
+export default Rainbow(About);
