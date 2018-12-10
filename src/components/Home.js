@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
 import axios from 'axios'
+import {Link} from 'react-router-dom'
 //UI baseed component which is a function it is Home component
 //convert fun to class since we use axios to make it a life cycle hook
 class Home extends Component{
@@ -26,7 +27,9 @@ class Home extends Component{
                return (
                    <div className="post card" key={post.id}>
                        <div className="card-content">
+                           <Link to={'/' +post.id }>
                            <span className="card-title">{post.title}</span>
+                           </Link>
                            <p>{post.body}</p>
                        </div>
                    </div>
