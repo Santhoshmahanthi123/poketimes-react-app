@@ -6,9 +6,9 @@ import { Link, NavLink, withRouter} from 'react-router-dom';
 //withRouter is higher order component which adds super power to navbar which is not a route
 const Navbar = (props) =>{
     // console.log(props);
-    setTimeout(() =>{
-        props.history.push('/About')
-    },2000);
+    // setTimeout(() =>{
+    //     props.history.push('/About')
+    // },2000);
     //NavLink is used to apply some stylink to components in future
     return(
       <nav className="nav-wrapper red darken-3">
